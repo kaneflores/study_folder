@@ -23,6 +23,9 @@ Responsibilities:
 - Integration
 - Verification and Validation (V&V)
 - Risk management
+Example:
+A systems engineer ensures that hardware, software, electrical,
+and mechanical subsystems work together and meet customer requirements.
 
 if __name__ == "__main__":
     main()
