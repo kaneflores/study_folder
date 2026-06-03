@@ -17,5 +17,12 @@ SYSTEMS ENGINEERING NOTES
 Systems Engineering is the process of defining, designing, integrating,
 testing, and managing complex systems throughout their lifecycle.
 
+Responsibilities:
+- Requirements development
+- System design
+- Integration
+- Verification and Validation (V&V)
+- Risk management
+
 if __name__ == "__main__":
     main()
