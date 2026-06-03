@@ -12,6 +12,10 @@ def main():
 SYSTEMS ENGINEERING NOTES
 =========================
 
+1. WHAT IS SYSTEMS ENGINEERING?
+------------------------------
+Systems Engineering is the process of defining, designing, integrating,
+testing, and managing complex systems throughout their lifecycle.
 
 if __name__ == "__main__":
     main()
