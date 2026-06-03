@@ -18,8 +18,15 @@ Electrical engineers design circuitry
 Software engineers write code
 Systems engineers ensure everything works together and satisfies requirements
 
-Definition & Design
+--Definition & Design--
 Stakeholder Needs
 System Requirements
 Subsystem Requirements
 Detailed Design
+Implementation
+
+Integration & Testing
+Unit Testing
+Integration Testing
+System Testing
+Acceptance Testing
