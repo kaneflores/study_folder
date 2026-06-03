@@ -1,5 +1,6 @@
 Systems Engineering Notes
 1. What is Systems Engineering?
+
 Systems Engineering (SE) is the process of defining, designing, integrating, testing, and managing complex systems throughout their lifecycle.
 
 A systems engineer ensures that:
@@ -8,7 +9,6 @@ Requirements are correct
 Subsystems work together
 The final product meets customer needs
 Verification and validation are completed
-
 Example
 
 For a missile system:
@@ -17,5 +17,3 @@ Mechanical engineers design the structure
 Electrical engineers design circuitry
 Software engineers write code
 Systems engineers ensure everything works together and satisfies requirements
-
-Systems Engineering Notes cont
