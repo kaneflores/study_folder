@@ -64,3 +64,12 @@ Bad Example
 "The radar should detect aircraft far away."
 
 "Far away" is subjective and not testable.
+
+4. Requirement Types
+Functional Requirements
+
+What the system does.
+
+Example:
+
+The software shall display current altitude.
