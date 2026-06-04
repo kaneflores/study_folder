@@ -43,8 +43,11 @@ Good Requirement Characteristics
 
 Requirements should be:
 
+
 -Clear
 -Measurable
 -Testable
 -Unambiguous
 -Traceable
+
+-- testing commit graph
