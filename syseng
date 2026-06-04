@@ -123,3 +123,6 @@ Validation
 "Did we build the right system?"
 
 Checks whether customer needs were met.
+Example:
+
+A customer wanted a weather sensor. You built exactly what was specified but it doesn't solve their operational problem.
