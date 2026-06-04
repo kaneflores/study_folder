@@ -54,3 +54,13 @@ Measurable
 Testable
 Unambiguous
 Traceable
+
+Good Example
+
+"The radar shall detect aircraft at a range of 100 km."
+
+Bad Example
+
+"The radar should detect aircraft far away."
+
+"Far away" is subjective and not testable.
