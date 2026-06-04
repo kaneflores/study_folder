@@ -97,3 +97,8 @@ Customer Need for example:
 → Test Result
 
 Why Important?
+If a requirement changes, engineers can identify:
+
+Impacted hardware
+Impacted software
+Impacted tests
