@@ -83,3 +83,6 @@ The system shall process data within 50 ms.
 Interface Requirements
 
 How components communicate.
+Example:
+
+The subsystem shall communicate via Ethernet.
