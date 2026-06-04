@@ -41,13 +41,16 @@ Requirements define what a system must do.
 
 Good Requirement Characteristics
 
+3. Requirements
+
+Requirements define what a system must do.
+
+Good Requirement Characteristics
+
 Requirements should be:
 
-
--Clear
--Measurable
--Testable
--Unambiguous
--Traceable
-
--- testing commit graph
+Clear
+Measurable
+Testable
+Unambiguous
+Traceable
