@@ -126,3 +126,6 @@ Checks whether customer needs were met.
 Example:
 
 A customer wanted a weather sensor. You built exactly what was specified but it doesn't solve their operational problem.
+
+Verification passed.
+Validation failed.
