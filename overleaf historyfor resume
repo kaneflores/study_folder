@@ -163,17 +163,7 @@ sentiment analysis and visualize consumer feedback across multiple audio device 
         \resumeItem{Analyzed a dataset containing 3,500+ records and synthesized key findings into interactive dashboards and executive-ready presentations to support strategic business decision-making.}
     \resumeItemListEnd
 
-    % \resumeSubheading
-    %   {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
-    %   {Southwestern University}{Georgetown, TX}
-    %   \resumeItemListStart
-    %     \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
-    %     \resumeItem{Developed a game in Java to test the generated dungeons}
-    %     \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
-    %     \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
-    %     \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
-    %     \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
-    %   \resumeItemListEnd
+    
 
   \resumeSubHeadingListEnd
 
