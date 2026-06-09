@@ -221,3 +221,9 @@ Software version conflicts
 9. Integration Testing
 
 Purpose:
+
+Verify components work together.
+
+Example
+
+GPS module sends coordinates to navigation software.
