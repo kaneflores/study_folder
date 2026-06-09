@@ -227,3 +227,10 @@ Verify components work together.
 Example
 
 GPS module sends coordinates to navigation software.
+
+Test:
+
+GPS output
+Software input
+Data transfer timing
+Error handling
