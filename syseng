@@ -210,3 +210,10 @@ Examples:
 Software + hardware
 Sensor + processor
 Subsystem + subsystem
+
+Common Integration Problems
+Timing issues
+Interface mismatches
+Communication failures
+Power issues
+Software version conflicts
