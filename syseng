@@ -255,3 +255,10 @@ check checking checkmate
 When something fails:
 
 Document:
+
+Requirement affected
+Conditions
+Expected result
+Actual result
+Severity
+Root cause
