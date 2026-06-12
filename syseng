@@ -228,12 +228,7 @@ Example
 
 GPS module sends coordinates to navigation software.
 
-Test:
 
-GPS output
-Software input
-Data transfer timing
-Error handling
 
 10. Test Planning
 
