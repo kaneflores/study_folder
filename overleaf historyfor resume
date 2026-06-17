@@ -1,220 +1,223 @@
-%-------------------------
-% Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
-%------------------------
+% % Reminder:
+% Make sure to adapt old resume to this format. thats pretty much it
+% just add one project or two that other friends have made that y0u have made to score better.
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[a4paper]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage[english]{babel}
-\usepackage{tabularx}
-\input{glyphtounicode}
 
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
-
-\urlstyle{same}
-
-\raggedbottom
+\usepackage{enumitem}
+\textheight=10in
+\pagestyle{empty}
 \raggedright
-\setlength{\tabcolsep}{0in}
+\usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
 
-% Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+%\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
 
-% Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
 
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
 }
 
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
 }
 
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
 }
 
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-11pt}
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
 
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep 0pt \parsep 0pt \parskip 0pt}}{\vspace*{4pt}
+    \end{list}
+}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
 
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
+\vspace*{-40pt}
 
-%----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
+% Set line spacing to 0.9
 
+
+%==== Profile ====%
+\vspace*{-20pt}
 \begin{center}
     \textbf{\Huge \scshape Kane Flores} \\ \vspace{1pt}
-    \small (215)-337-5059 $|$ \href{mailto:x@x.com}{\underline{kane.r.flores5378@gmail.com}} $|$ 
+    \small (215)-337-5059 $|$ \href{mailto:kane.r.flores5378@gmail.com}{\underline{kane.r.flores5378@gmail.com}} $|$ 
     \href{https://www.linkedin.com/in/kanerflores/}{\underline{linkedin.com/in/kanerflores}} $|$
-    \href{https://github.com/kaneflores}{\underline{github.com/kaneflores}}
+    \href{https://github.com/kaneflores}{\underline{github.com/kaneflores}} $|$
+    \small U.S. Citizen
+    
+    
 \end{center}
 
+%==== Education ====%
+\vspace*{-5pt}
+\header{Education}
+\textbf{The Pennsylvania State University}\hfill University Park, PA\\
+Bachelor of Science in Computer Science \textit{} \hfill August 2021 -- May 2025\\
+% \header{Education}
+% \textbf{The Pennsylvania State University}\hfill University Park, PA\\
+% Bachelor of Science in Computer Science, GPA: 3.36 \textit{} \hfill August 2021 -- May 2025\\
 
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {The Pennsylvania State University}{University Park, PA}
-      {Bachelor of Science in Computer Science}{August 2021 -- May 2025}
-  \resumeSubHeadingListEnd
+\vspace{0mm}
 
-
-%-----------EXPERIENCE-----------
-\section{Experience}
-  \resumeSubHeadingListStart
-
-    \resumeSubheading
-      {AI Trainer (Contract - 35 hrs/week)}{December 2025 -- March 2026}
-      {Handshake AI Fellowship}{Remote}
-      \resumeItemListStart
-        \resumeItem{Collaborated with cross-functional teams to design and test multimodal prompts, improving AI model performance across 1000+ text, image, and video tasks.}
-        \resumeItem{Reviewed and refined AI outputs to align with project-specific guidelines and quality standards across multiple 
-projects 35 hours per week.}
-        \resumeItem{Took initiative to mentor team members by clarifying project guidelines and recommending improvements to feedback responses, contributing to higher-quality deliverables and expanded responsibilities as a Community Team Reviewer.}
-      \resumeItemListEnd
-      
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
-
-    \resumeSubheading
-      {Data Analytics Extern for Beats By Dre. Externship}{November 2025 -- February 2026}
-      {Extern, Inc.}{Remote}
-      \resumeItemListStart
-        \resumeItem{Conducted qualitative and quantitative research to analyze Gen Z trends, behaviors, and preferences in the audio 
-device market, generating actionable customer insights.}
-        \resumeItem{Utilized Python, data science libraries (pandas, NumPy, Matplotlib), and natural language processing tools including Gemini AI to perform 
-sentiment analysis and visualize consumer feedback across multiple audio device brands}
-        \resumeItem{Analyzed a dataset containing 3,500+ records and synthesized key findings into interactive dashboards and executive-ready presentations to support strategic business decision-making.}
-    \resumeItemListEnd
-
-    % \resumeSubheading
-    %   {Artificial Intelligence Research Assistant}{May 2019 -- July 2019}
-    %   {Southwestern University}{Georgetown, TX}
-    %   \resumeItemListStart
-    %     \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
-    %     \resumeItem{Developed a game in Java to test the generated dungeons}
-    %     \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
-    %     \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
-    %     \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
-    %     \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
-    %   \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
-
-
-%-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Object Tracker for Video Sequences} $|$ \emph{MATLAB, Git, Microsoft Word}}{March 2025 -- May 2025}
-          \resumeItemListStart
-            \resumeItem{Developed an object tracking system in MATLAB to detect and follow moving objects across video frames using 
-computer vision techniques such as Lucas-Kanade method. }
-            \resumeItem{Implemented and evaluated Lucas-Kanade tracker, iteratively debugging performance issues such as tracker drift 
-and position loss.}
-            \resumeItem{Processed and analyzed video data to validate tracking accuracy under varying motion and lighting conditions.}
-            \resumeItem{Documented implementation approach and experimental results, including analysis of algorithm limitations and 
-performance tradeoffs.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Concurrent Channel Communication System} $|$ \emph{C, Git (version control), Linux (Ubuntu)}}{October 2024 -- December 2024}
-          \resumeItemListStart
-            \resumeItem{Programmed a multithreaded system in C using a thread-safe buffer abstraction for inter-thread communication.}
-            \resumeItem{Used low-level POSIX threads and semaphores to enable safe, efficient multi-threaded communication and 
-synchronization, eliminating race conditions across test scenarios with 2ms average latency}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
+\header{Relevant Coursework}
+ Operating Systems $\circ$ Systems Programming $\circ$ Relational Database Management Systems $\circ$ Advanced Algorithms and Data Structures $\circ$ Computer Vision $\circ$ Communication Networks $\circ$ Big Data Programming Models $\circ$ Computation Theory $\circ$ Engineering Leadership in Organizations
 
 
 
-%
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
+%==== Experience ====%
+\header{Experience}
+\vspace{0mm}
+
+\textbf{AI Trainer (Contract - 35 hrs/week)} \hfill December 2025 -- March 2026\\
+\textit{Handshake AI Fellowship} \hfill Remote\\
+\vspace{1mm}
+\begin{itemize}[noitemsep, topsep=0pt, parsep=0pt, partopsep=0pt]
+    \item Collaborated with cross-functional teams to design and test multimodal prompts, improving AI model performance across 1000+ text, image, and video tasks.
+    \item Performed iterative testing and validation of model outputs, identifying defects and improving response quality.
+    \item Collaborated with peers to develop training resources covering effective image analysis, common response pitfalls, and quality evaluation criteria, enabling teammates to produce higher-quality deliverables.
+\end{itemize}
+\vspace{1mm}
+\textbf{Data Analytics Extern for Beats By Dre. Extern Program} \hfill November 2025 – February 2026\\
+\textit{Extern, Inc.} \hfill Remote\\
+\vspace{1mm}
+\begin{itemize}[noitemsep, topsep=0pt, parsep=0pt, partopsep=0pt]
+    \item Conducted qualitative and quantitative research to analyze consumer trends, behaviors, and preferences in the audio
+device market, generating actionable customer insights.
+    \item Utilized Python, data science libraries (pandas, NumPy, Matplotlib), and natural language processing tools
+including Gemini AI to perform sentiment analysis and visualize consumer feedback across multiple audio device
+brands.
+    \item Analyzed a dataset containing 3,500+ records and synthesized key findings into interactive dashboards and
+executive-ready presentations to support strategic business decision-making.
+\end{itemize}
+\vspace{1mm}
+
+% \textbf{Penn State University} \hfill State College, PA \\
+% \textit{STEM Peer Tutor/Mentor} \hfill August 2022 - May 2023\\
+% \vspace{1mm}
+% \begin{itemize}[noitemsep, topsep=0pt, parsep=0pt, partopsep=0pt]
+%     \item Tutored students on Physics and Calculus.
+%     \item Introduced first year students to the campus and informed them of all the University's Student resources.  
+% \end{itemize}
+
+%==== Projects ====%
+\header{Projects}
+
+{\textbf{MIPS 32-bit CPU Design}} \hfill October 2023 -- December 2023\\
+\textit{Vivado, Verilog} 
+\vspace{1mm}
+\begin{itemize}[noitemsep, topsep=0pt, parsep=0pt, partopsep=0pt]
+    \item Designed a five-stage pipelined 32-bit CPU using the Xilinx design package for FPGAs.
+    \item The CPU is based on MIPS architecture and is compatible with most MIPS instructions.
+\end{itemize}
+\vspace{1mm}
+
+{\textbf{Object Tracker for Video Sequences (Capstone)}} \hfill March 2025 -- May 2025\\
+\textit{MATLAB, Git, Microsoft Word} 
+\vspace{1mm}
+\begin{itemize}[noitemsep, topsep=0pt, parsep=0pt, partopsep=0pt]
+    \item  Developed an object tracking system in MATLAB to detect and follow moving objects across video frames using computer vision techniques such as Lucas-Kanade method.
+    \item  Implemented and evaluated Lucas-Kanade tracker, iteratively debugging performance issues such as tracker drift, position loss, and analyzed performance under various lighting and motion conditions.
+    \item  Documented implementation approach and experimental results, including analysis of algorithm limitations and performance tradeoffs.
+\end{itemize}
+\vspace{1mm}
+
+\href{https://github.com/kaneflores/Beats-Data-Dashboard}{\textbf{High-Fidelity Speaker Market Analysis Dashboard}} \hfill November 2025 -- Feb 2026\\
+\textit{React, Python, Pandas, NumPy, Matplotlib, Recharts, Tailwind CSS} 
+\vspace{1mm}
+\begin{itemize}[noitemsep, topsep=0pt, parsep=0pt, partopsep=0pt]
+    \item  Analyzed survey data (n=3552) using Python (Pandas, NumPy, Matplotlib) to evaluate launch viability of a High-Fidelity wireless speaker; conducted EDA, segmentation and price sensitivity modeling.
+    \item  Built an executive-level React dashboard to visualize feature importance, brand recognition, purchasing intent, and demographic trends.
+    \item  Identified core target segment (25–34) and optimal pricing band (\$199 to \$249), informing product roadmap and go-to-market strategy.
+\end{itemize}
+\vspace{1mm}
+
+% {\textbf{Concurrent Channel Communication System}} \hfill October 2024 -- December 2024\\
+% \textit{C, Git (version control), Linux (Ubuntu)} 
+% \vspace{1mm}
+% \begin{itemize}[noitemsep, topsep=0pt, parsep=0pt, partopsep=0pt]
+%     \item Programmed a multithreaded system in C using a thread-safe buffer abstraction for inter-thread communication.
+%     \item Used low-level POSIX threads and semaphores to enable safe, efficient multi-threaded communication and
+% synchronization, eliminating race conditions across test scenarios with 2ms average latency.
+% \end{itemize}
+% \vspace{1mm}
+
+\href{https://github.com/kaneflores/Recipe-Management-GUI}{\textbf{Full-stack Recipe Management Website}} \hfill August 2024 -- December 2024\\
+\textit{Python, Flask, SQLAlchemy, HTML, CSS, JavaScript} 
+\vspace{1mm}
+\begin{itemize}[noitemsep, topsep=0pt, parsep=0pt, partopsep=0pt]
+    \item In a two-person team, created a full-stack web app for storing and managing recipes, integrating Python (Flask) with SQLAlchemy for database management.
+    \item Designed and implemented a relational database to efficiently store user-submitted recipes and ingredients.
+    \item Built a user-friendly front-end with HTML, CSS, and JavaScript to display and filter recipes dynamically.
+\end{itemize}
+\vspace{1mm}
+% -------------skills
+\header{Technical Skills}
+\vspace{-3mm}
+\begin{itemize}[leftmargin = 0.15in, label = {}]
     \small{\item{
-     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
-     \textbf{Frameworks \& Libraries}{: Node.js, Express, Flask, React, SQLAlchemy, NumPy, Matplotlib, BeautifulSoup, WordPress} \\
-     \textbf{Systems \& Tools}{: Git, Docker, Linux (Ubuntu), Bash/Shell scripting, Microsoft Office (Excel, PowerPoint, Word), VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
-     \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+    \textbf{Languages}{: MATLAB, Python, Java, JavaScript, TypeScript, SQL, C, C++, Verilog, R, HTML/CSS,} \\
+     \textbf{Frameworks \& Libraries}{: Pandas, numPy, Node.js, Express, Flask, React.js, SQLAlchemy, NumPy, Matplotlib, Tailwind CSS, Recharts} \\
+     \textbf{Developer Tools}{: Git, Docker, Linux (Ubuntu), Vivado, Microsoft Office (Excel, PowerPoint, Word), MATLAB, MS Windows} \\
+     \textbf{Clearance}{: U.S. Citizen}
     }}
- \end{itemize}
+\end{itemize}
+% \begin{tabular}{ l l }
+%     Programming: Python, HTML/CSS, Java, JavaScript, C/C++, Verilog, \\
+%     Software: Quartus, Eclipse, Vivado, Vitis, Autodesk CAD, Multisim, Linux, Altium, Git, SVN, JIRA, Matlab \\
+%     Hardware: Xilinx and Altera FPGA, Arduino, ESP32, Spectrum Analyzer, Logic Analyzer, Oscilloscope
+% \end{tabular}
+% \vspace{1.5mm}
+% \section{Technical Skills}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%      \textbf{Languages}{: MATLAB, Python, Java, JavaScript, TypeScript, SQL, C, C++, Verilog, R} \\
+%      \textbf{Frameworks \& Libraries:}{: pandas, numPy, Node.js, Express, Flask, React.js, SQLAlchemy, NumPy, Matplotlib, BeautifulSoup} \\
+%      \textbf{Developer Tools}{: Git, Docker, Linux (Ubuntu), Vivado, Microsoft Office (Excel, PowerPoint, Word)} \\
+%     }}
+%  \end{itemize}
 
-
-%-------------------------------------------
+\ 
 \end{document}
