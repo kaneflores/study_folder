@@ -339,3 +339,11 @@ Software-to-software
 Human-to-machine
 
 Interface Control Document (ICD)
+
+Defines:
+
+Data format
+Signals
+Protocols
+Timing
+Electrical characteristics
