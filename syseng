@@ -314,11 +314,12 @@ Manufacturing
 Large software systems
 
 14. Configuration Management
+
 Controls system changes.
+
 Questions answered:
 
 Which version is deployed?
-
 What changed?
 Who approved the change?
 Common Tools
