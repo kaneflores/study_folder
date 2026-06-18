@@ -331,3 +331,9 @@ Requirements databases
 15. Interfaces
 
 An interface is where two components interact.
+
+Examples:
+
+Hardware-to-hardware
+Software-to-software
+Human-to-machine
