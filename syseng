@@ -351,3 +351,9 @@ Electrical characteristics
 16. Risk Management
 
 Risk = Probability × Impact
+
+Example Risks
+Risk	Probability	Impact
+Sensor delivery delay	Medium	High
+Software defect	High	Medium
+Power supply failure	Low	High
