@@ -381,3 +381,5 @@ What is Integration Testing?
 "Integration testing verifies that multiple components or subsystems interact correctly when combined into a larger system."
 
 Why is Traceability Important?
+
+"Traceability links requirements to design, implementation, and testing so that changes can be analyzed and every requirement can be verified."
