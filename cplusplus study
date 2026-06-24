@@ -5,5 +5,5 @@ int main() {
     return 0;
 }
 
-/// g++ -x c++ "cplusplus study" -o [example binary file name] (compile)
+/// g++ -x c++ "cplusplus study" -o [executable file (contains mahcine code)] (compile)
 /// run: ./[stated name]
