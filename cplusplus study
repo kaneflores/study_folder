@@ -1,9 +1,18 @@
 #include <iostream>
 
+/// g++ -x c++ "cplusplus study" -o [executable file (contains mahcine code)] (compile)
+/// run: ./[stated name]
+
 int main() {
-    std::cout << "Hello, World!!!!!!" << std::endl;
+    int file_size=100, counter = 1;
+    //file_size = 100;
+    double sales = 9.99;
+    int a = 100;
+    int b = 200;
+    int temp = a;
+    a= 200;
+    b = temp;
+    std::cout << file_size << std::endl;
     return 0;
 }
 
-/// g++ -x c++ "cplusplus study" -o [executable file (contains mahcine code)] (compile)
-/// run: ./[stated name]
