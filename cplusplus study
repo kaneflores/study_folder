@@ -5,3 +5,5 @@ int main() {
     return 0;
 }
 
+/// g++ -x c++ "cplusplus study" -o [example binary file name] (compile)
+/// run: ./[stated name]
