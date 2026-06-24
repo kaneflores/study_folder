@@ -92,6 +92,7 @@ The subsystem shall communicate via Ethernet.
 5. Requirement Traceability
 
 Requirements must be traceable from:
+
 Customer Need for example: 
 → System Requirement
 → Subsystem Requirement
