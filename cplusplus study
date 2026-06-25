@@ -29,21 +29,24 @@
 //     return 0;
 // }
 
-int main() { // math
-    int x = 10;
-    int y = 3;
-    int z = x + y;
-    z = x /y; // ints to int double infects
-    z = x % y;
-    x = x + 5;
-    x++;
-    x--;
-    x = x * 5;
-    int c;
-    int a = 10;
-    int b = ++a; // postfix (a is 11)
+// int main() { // math
+//     int x = 10;
+//     int y = 3;
+//     int z = x + y;
+//     z = x /y; // ints to int double infects
+//     z = x % y;
+//     x = x + 5;
+//     x++;
+//     x--;
+//     x = x * 5;
+//     int c;
+//     int a = 10;
+//     int b = ++a; // postfix (a is 11)
+
+//     // x++ (var is incremented not stored)
+//     // ++x (var is incremented and stored into left var)
     
-    std::cout << b << std::endl;
-    return 0;
-}
+//     std::cout << b << std::endl;
+//     return 0;
+// }
 
