@@ -130,11 +130,36 @@ using namespace std;
 // }
 
 // int main(){
-//     double pi = 3.14;
+//     double pi{3.14};
 //     cout << "Enter radius of your circle: ";
-//     double radius;
+//     double radius {};
 //     cin >> radius;
 //     double circle_area = pi * pow(radius,2);
 //     cout << circle_area << endl;
+//     return 0;
+// }
+
+/*
+    lets go
+*/
+
+//fundamental data types
+// c++ is a statically typed language
+
+// int main(){ // use suffixes like f or l, use auto for a cleaner look
+//     // double price = 99.99;
+//     // float interestRate = 3.67f;
+//     // long fileSize = 90000L;
+//     // char letter = 'a';
+//     // auto isValid = false;
+//     /// initialize your varialbes key 
+//     int init {};
+//     int init = 0;
+//     return 0;
+// }
+
+// int main() { unsinged not really touched upon further.
+//     unsigned int number = 255; 
+//     cout << number;
 //     return 0;
 // }
