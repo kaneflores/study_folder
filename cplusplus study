@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <cstdlib>
 
 using namespace std;
 
@@ -163,3 +164,17 @@ using namespace std;
 //     cout << number;
 //     return 0;
 // }
+
+// int main() {
+//     short number = 1'000; // larger data type
+//     int another{number}; // smaller mem space.
+//     cout << another;
+//     return 0;
+// }
+
+int main() {
+    srand(5);
+    int number = rand();
+    cout << number;
+    return 0;
+}
