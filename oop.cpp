@@ -4,10 +4,63 @@
 
 using namespace std;
 
+// class Point{ // struct another way of organizing your data
+//     public: // public data that we can access
+//         int x{};
+//         int y{};
+
+//         void print() const {
+//             cout << "(" << x << ", " << y << ")" << endl;
+//         }
+
+//         double distanceTo(const Point& other) const {
+//             int xDiff = x - other.x;
+//             int yDiff = y - other.y;
+//             return sqrt(xDiff * xDiff + yDiff * yDiff);
+
+//         }
+
+//         Point(){
+//             cout << "Constructor invoked" << endl;
+//         }
+//         // Point(int a, int b){ //constructor
+//         //     cout << "This has 2 parameters" << endl;
+//         //     x = a;
+//         //     y = b;
+
+//         // }
+
+//         //syntax similarites
+//         // Point(int x, int y){ //constructor // if you insist on using x and y or same variables init from the start
+//         //     cout << "This has 2 parameters" << endl;
+//         //     this->x = x;
+//         //     this->y = y;
+            
+//         // }
+
+//         // //constructor initializer
+//         // Point(int x, int y) : x(x), y(y){} //constructor
+
+//         // what does constructor help with?
+//         // -- forced full initialization
+//         // -- initial access to private data
+//         // distance the user of the class from the actual variables (attributes)
+
+//         // encapsulation -> gates accesss to sensitive variables
+
+// };
+
 class Point{ // struct another way of organizing your data
-    public: // public data that we can access
+    private: //encapsulation example 
         int x{};
         int y{};
+
+    public: // public data that we can access
+        int getX() { return x;} //encapsulation
+        void setX(int newX) {x=newX;}//encapsulation ...
+
+        int getY() {return y;} 
+        void setY(int newY) {y = newY;}
 
         void print() const {
             cout << "(" << x << ", " << y << ")" << endl;
@@ -23,28 +76,8 @@ class Point{ // struct another way of organizing your data
         Point(){
             cout << "Constructor invoked" << endl;
         }
-        // Point(int a, int b){ //constructor
-        //     cout << "This has 2 parameters" << endl;
-        //     x = a;
-        //     y = b;
-
-        // }
-
-        //syntax similarites
-        // Point(int x, int y){ //constructor // if you insist on using x and y or same variables init from the start
-        //     cout << "This has 2 parameters" << endl;
-        //     this->x = x;
-        //     this->y = y;
-            
-        // }
-
-        // //constructor initializer
         // Point(int x, int y) : x(x), y(y){} //constructor
-
-        // what does constructor help with?
-        // -- forced full initialization
-        // -- initial access to private data
-        // distance the user of the class from the actual variables (attributes)
+        // notes: constrcutor is also an example of abstraction where you hides the details of actual initialization, you are now worried about passing data now.
 
         // encapsulation -> gates accesss to sensitive variables
 
@@ -149,6 +182,12 @@ int main(){ // method calls in loop and constructors
     }
     
     Point p;
+    p.setX(5); // encapsulation
+    p.setY(10); //encapsulation.
+
+    cout << p.getX() + p.getY() << endl;
+    // encapsulation is an example of abstraction 
+
     return 0;
 }
 // methods vs constructors
