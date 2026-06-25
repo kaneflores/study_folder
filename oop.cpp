@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <cmath>
 
 using namespace std;
 
@@ -8,8 +9,15 @@ class Point{ // struct another way of organizing your data
         int x{};
         int y{};
 
-        void print(){
+        void print() const {
             cout << "(" << x << ", " << y << ")" << endl;
+        }
+
+        double distanceTo(const Point& other) const {
+            int xDiff = x - other.x;
+            int yDiff = y - other.y;
+            return sqrt(xDiff * xDiff + yDiff * yDiff);
+
         }
 };
 // int main(){ // without oop
@@ -65,7 +73,13 @@ int main(){ // without oop
     // Point points[5];
     // points[0].x;
 
-    std::vector<Point> points ={{0,1},{2,2},{2,3},{3,4},{4,5}};
+    vector<Point> points ={{0,1},{2,2},{2,3},{3,4},{4,5}};
+
+    const Point& p1 = points.at(0);
+    const Point& p2 = points.at(1);
+    cout << "Distance: " << p1.distanceTo(p2);
+    p1.print();
+    p2.print();
 
     for( auto point : points){
         point.print();
