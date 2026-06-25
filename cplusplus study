@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -68,18 +69,62 @@ using namespace std;
 //     return 0;
 // }
 
-int main() {
-    double sales = 95000;
-    const double state_tax = 0.04;
-    double stateTax = sales *  state_tax;
-    const double county_tax = 0.02;
-    double                countyTax = sales *  county_tax;
+// int main() { // practice.
+//     double sales = 95000;
+//     const double state_tax = 0.04;
+//     double stateTax = sales *  state_tax;
+//     const double county_tax = 0.02;
+//     double                countyTax = sales *  county_tax;
 
-    cout << "Sales: $" << sales << endl
-        << "State Tax: $" <<  stateTax << endl
-        << "County Tax: $" << countyTax << endl
-        << "Tax Return: $" << (sales - stateTax - countyTax) << endl;
+//     cout << "Sales: $" << sales << endl
+//         << "State Tax: $" <<  stateTax << endl
+//         << "County Tax: $" << countyTax << endl
+//         << "Tax Return: $" << (sales - stateTax - countyTax) << endl;
 
-    return 0;
+//     return 0;
 
-}
+// }
+
+// int main(){
+//     cout << "Enter a value: ";
+//     int value;
+//     cin >> value;
+//     cout << value;
+//     return 0;
+// }
+
+// int main() { // practice.
+//     cout << "Enter your sales: ";
+//     double sales;
+//     cin >> sales;
+//     const double state_tax = 0.04;
+//     double stateTax = sales *  state_tax;
+//     const double county_tax = 0.02;
+//     double                countyTax = sales *  county_tax;
+
+//     cout << "Sales: $" << sales << endl
+//         << "State Tax: $" <<  stateTax << endl
+//         << "County Tax: $" << countyTax << endl
+//         << "Tax Return: $" << (sales - stateTax - countyTax) << endl;
+
+//     return 0;
+
+// }
+
+// int main(){ // program to convert fahrenheit to celsius
+//     cout << "Enter Fahrenheit: ";
+//     double fahrenheit;
+//     cin >> fahrenheit; 
+
+//     double conversion = (5.0 / 9)*(fahrenheit - 32);
+
+//     cout << conversion << endl;
+
+// }
+
+// int main() { // cmath usage
+//     double result = floor(1.7);
+//     double res = floor(100.0);
+//     cout << result << res;
+//     return 0;
+// }
