@@ -33,12 +33,17 @@ int main() { // math
     int x = 10;
     int y = 3;
     int z = x + y;
-    int z = x /y; // ints to int double infects
-    int z = x % y;
+    z = x /y; // ints to int double infects
+    z = x % y;
     x = x + 5;
+    x++;
+    x--;
+    x = x * 5;
+    int c;
+    int a = 10;
+    int b = ++a; // postfix (a is 11)
     
-    
-    std::cout <<z;
+    std::cout << b << std::endl;
     return 0;
 }
 
