@@ -6,6 +6,7 @@ using namespace std;
 
 /// g++ -x c++ "cplusplus study" -o [executable file (contains mahcine code)] (compile)
 /// run: ./[stated name]
+/// alt easy: g++ filename.cpp; ./a.out
 
 // int main() {
 //     int file_size=100, counter = 1;
