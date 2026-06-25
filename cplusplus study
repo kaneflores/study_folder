@@ -1,5 +1,7 @@
 #include <iostream>
 
+using namespace std;
+
 /// g++ -x c++ "cplusplus study" -o [executable file (contains mahcine code)] (compile)
 /// run: ./[stated name]
 
@@ -56,9 +58,28 @@
 //     return 0;
 // }
 
-int main(){
-    int x = 10;
-    std::cout << "x = ";   // standard output stream - << stream insertion operator - string
-    std::cout << x << std::endl;
+// int main(){
+//     int x = 23;
+//     // std::cout << "x = ";   // standard output stream - << stream insertion operator - string
+//     // std::cout << x << std::endl;
+//     // std::cout << "x = " << x << std::endl;
+//     cout << "kane is " << x << endl
+//         << " and proud." << endl;
+//     return 0;
+// }
+
+int main() {
+    double sales = 95000;
+    const double state_tax = 0.04;
+    double stateTax = sales *  state_tax;
+    const double county_tax = 0.02;
+    double                countyTax = sales *  county_tax;
+
+    cout << "Sales: $" << sales << endl
+        << "State Tax: $" <<  stateTax << endl
+        << "County Tax: $" << countyTax << endl
+        << "Tax Return: $" << (sales - stateTax - countyTax) << endl;
+
     return 0;
+
 }
