@@ -128,3 +128,13 @@ using namespace std;
 //     cout << result << res;
 //     return 0;
 // }
+
+// int main(){
+//     double pi = 3.14;
+//     cout << "Enter radius of your circle: ";
+//     double radius;
+//     cin >> radius;
+//     double circle_area = pi * pow(radius,2);
+//     cout << circle_area << endl;
+//     return 0;
+// }
