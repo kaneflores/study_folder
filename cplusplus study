@@ -23,3 +23,18 @@
 //     return 0;
 // }
 
+// int main(){
+//     int file_size; //Snake Case
+//     std::cout << "naming conventions" << std::endl;
+//     return 0;
+// }
+
+int main() { // math
+    int x = 10;
+    int y = 3;
+    int z = x + y;
+    
+    std::cout <<z;
+    return 0;
+}
+
