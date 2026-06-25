@@ -50,3 +50,15 @@
 //     return 0;
 // }
 
+// int main(){
+//     double x = 1 + 2 * 3;
+//     std::cout << x;
+//     return 0;
+// }
+
+int main(){
+    int x = 10;
+    std::cout << "x = ";   // standard output stream - << stream insertion operator - string
+    std::cout << x << std::endl;
+    return 0;
+}
