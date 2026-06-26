@@ -7,3 +7,18 @@ OOP terms:
 class is a blueprint that describes the data structure and methods/functionality of an object
 
 object is a specific instance created from a class 
+
+methods defines what an object can do, which was instantiated from a class
+
+constructors are special class member functions that are used for initializing data of a class
+
+encapsulation is the practice of hiding internal class data and only allowing access to these via public methods like getters and setters
+
+abstraction is the concept of hiding complex implementation to make a simple interface 
+
+composition is when a class has instances of other classes as attributes
+for example: we have a class called Point that has an object (x,y), and a city class that contains an object called location that is an instance of Point actually, and through this its possible to store a point (x,y) in location as an attribute
+
+inheritance is when a child/class inherits attirbutes and methods of a base/parent class.
+
+polymorphism 
