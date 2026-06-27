@@ -36,4 +36,4 @@ Systems Engineering is a process that we can use to build and design a complex i
     - and typically this process involves a lot of review cycles using tools that allow simulation and analysis that assess and update the system.
 
     - why systems engineering as an approach? 
-        - 
+        - Its the recommended approach involving projects that are too copmlex to build and design as a single object. It allows something to be built as multiple, functional pieces that make up a system, which are easier to develop and manage.
