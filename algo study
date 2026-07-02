@@ -1,10 +1,17 @@
 arrays vs linked list 
 
 both are a collection of data
-    ....static arrays:  lengths of array cannot be changed once it is set. it is only possible to access it.
+    ....static arrays:  the lenght of the array is fixed at creation. it needs to be managed properly to prevent accessing out of bounds.
     
     ...dynamic saray: it is possible to change the length of the array, but the data stored in the old array would be copied 
         over into a new array, which increases the mem size.
 
     linked list: performs and structured differently to ana array
-        ... contains node to store data.
+        ... contains nodes to store data, and each node points to another node, which creates a linked list
+            the benefits of using a linked list is that a node can point anywhere, but it loses the ability to know exact location of a data point because you will not know the size immediately like an array.
+
+article notes: 
+
+Static Arrays
+
+A static array has a fixed size that must be known when the array is created.
