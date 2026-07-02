@@ -1,2 +1,4 @@
 arrays vs linked list 
 
+both are a collection of data
+    ....static arrays: lengths of array cannot be changed once it is set. it is only possible to access it.
