@@ -7,3 +7,4 @@ both are a collection of data
         over into a new array, which increases the mem size.
 
     linked list: performs and structured differently to ana array
+        ... contains node to store data.
