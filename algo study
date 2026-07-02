@@ -6,3 +6,4 @@ both are a collection of data
     ...dynamic saray: it is possible to change the length of the array, but the data stored in the old array would be copied 
         over into a new array, which increases the mem size.
 
+    linked list: performs and structured differently to ana array
