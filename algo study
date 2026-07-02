@@ -13,7 +13,6 @@ both are a collection of data
 article notes: 
 
 Static Arrays
-
 A static array has a fixed size that must be known when the array is created.
 Size is fixed and cannot change.
 Memory is allocated once.
