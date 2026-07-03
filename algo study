@@ -29,3 +29,8 @@ because no translation happens while the code is running,
 but interpreted languages executes code at runtime through an interpreter, 
 which makes execution slow. some compiled langauges are c/c++, 
 rust or go, some interpreted languages are python, java script.
+
+int* p = &x;
+p = holds the value of the address
+&x = contains the memory address of x
+*p = stores the memory address of another var
