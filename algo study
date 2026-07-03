@@ -19,7 +19,6 @@ A static array has a fixed size that must be known when the array is created.
 Size is fixed and cannot change.
 
 Memory is allocated once.
-
 Elements are stored in contiguous memory.
 Fast access using indexes (O(1)).
 Simpler and has less memory overhead.
