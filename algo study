@@ -23,7 +23,6 @@ Memory is allocated once.
 Elements are stored in contiguous memory.
 
 Fast access using indexes (O(1)).
-
 Simpler and has less memory overhead.
 
 compiled vs interpreted languages.
