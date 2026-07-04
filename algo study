@@ -8,7 +8,8 @@ both are a collection of data
 
     linked list: performs and structured differently to ana array
         ... contains nodes to store data, and each node points to another node, which creates a linked list
-            the benefits of using a linked list is that a node can point anywhere, but it loses the ability to know exact location of a data point because you will not know the size immediately like an array.
+            the benefits of using a linked list is that a node can point anywhere, but it loses the ability to know exact location of a data point 
+            because you will not know the size immediately like an array.
 
 
 article notes: 
