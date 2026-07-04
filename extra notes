@@ -6,13 +6,13 @@ class is a blueprint that describes the data structure and methods/functionality
 
 object is a specific instance created from a class 
 
-methods defines what an object can do, which was instantiated from a class
+methods defines what an object can do, (which was instantiated from a class)
 
 constructors are special class member functions that are used for initializing data of a class
 
-encapsulation is the practice of hiding internal class data and only allowing access to these via public methods like getters and setters
+encapsulation is the practice of hiding internal class data and only allowing access to these via public methods like getters and setters. a class is an example of practicing encapsulation.
 
-abstraction is the concept of hiding complex implementation to make a simple interface 
+abstraction is the concept of hiding complex implementation to make a simple interface. functions are a form of abstraction, the methods of an object are a abstraction.
 
 composition is when a class has instances of other classes as attributes
 for example: we have a class called Point that has an object (x,y), and a city class that contains an object called location that is an instance of Point actually, and through this its possible to store a point (x,y) in location as an attribute
@@ -22,8 +22,8 @@ inheritance is when a child/class inherits attirbutes and methods of a base/pare
 polymorphism is the concept of treating an object of a specific type as various types based on its inheritance hierarchy
 
 
-Systems Engineering is a method of how we can develop complex projects that meet objectives in an efficient way.
-    efficiency by minimizing rework catching errors early, and communicating effectively
+Systems Engineering is a method of how we can develop complex projects that can meet objectives in an efficient way.
+    efficiency meaning  minimizing rework catching errors early, and communicating effectively
 
 Whats systems engineering and why is it useful
 

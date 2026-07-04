@@ -2,7 +2,9 @@
 
 #include <iostream>
 
-class Employee
+class Employee{ a class is a user-defined data type that acts a template. Its also an example of encapsulation because it encapsulates data and methods into one, which defines 
+the structure of the objects from a certain class will have.
+}
 int main(){
 
 }
