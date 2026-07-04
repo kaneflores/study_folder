@@ -11,6 +11,7 @@ both are a collection of data
             the benefits of using a linked list is that a node can point anywhere, but it loses the ability to know exact location of a data point 
             because you will not know the size immediately like an array.
 
+    
 
 article notes: 
 
