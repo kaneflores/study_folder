@@ -12,7 +12,7 @@ both are a collection of data
             because you will not know the size immediately like an array.
 
     so an array stores elements in contigous memory and allows fast access to those elements, while linked lists store elements as nodes connected by pointers, which allow efficient 
-    insertion and deletions 
+    insertion and deletions ( arrays are faster for random accessing of elements, while linked lists are more optimized when it comes to inserting and deleting elements because they )
 
 article notes: 
 
