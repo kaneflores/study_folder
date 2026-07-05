@@ -1,18 +1,17 @@
 arrays vs linked list 
 
 both are a collection of data
-    ....static arrays:  the lenght of the array is fixed at creation. it needs to be managed properly to prevent accessing out of bounds.
+    ....static arrays:  the lenght of the array is fixed at creation. it needs to be managed properly to prevent accessing out of bounds. stored in the stack
     
     ...dynamic saray: it is possible to change the length of the array, but the data stored in the old array would be copied 
-        over into a new array, which increases the mem size.
+        over into a new array, which increases the mem size. stored in the  heap
 
     linked list: performs and structured differently to ana array
         ... contains nodes to store data, and each node points to another node, which creates a linked list
             the benefits of using a linked list is that a node can point anywhere, but it loses the ability to know exact location of a data point 
             because you will not know the size immediately like an array.
 
-    so an array stores elements in contigous memory and allows fast access to those elements, while linked lists store elements as nodes connected by pointers, which allow efficient 
-    insertion and deletions ( arrays are faster for random accessing of elements, while linked lists are more optimized when it comes to inserting and deleting elements because they )
+    
 
 article notes: 
 
@@ -24,6 +23,9 @@ Memory is allocated once.
 Elements are stored in contiguous memory.
 Fast access using indexes (O(1)).
 Simpler and has less memory overhead.
+
+so an array stores elements in contigous memory and allows fast access to those elements, while linked lists store elements as nodes connected by pointers, which allow efficient 
+    insertion and deletions ( arrays are faster for random accessing of elements, while linked lists are more optimized when it comes to inserting and deleting elements)
 
 compiled vs interpreted languages.
 compiled language converts the source code into 

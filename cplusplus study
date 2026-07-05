@@ -2,6 +2,7 @@
 #include <cmath>
 #include <cstdlib>
 
+
 using namespace std;
 
 /// g++ -x c++ "cplusplus study" -o [executable file (contains mahcine code)] (compile)
