@@ -19,7 +19,7 @@ for example: we have a class called Point that has an object (x,y), and a city c
 
 inheritance is when a child/class inherits attirbutes and methods of a base/parent class.
 
-polymorphism is the concept of treating an object of a specific type as various types based on its inheritance hierarchy
+polymorphism is the concept of treating an object of a specific type as various types based on its inheritance hierarchy (an objects data type influences how a function behaves based on its inheritance structure)
 
 
 Systems Engineering is a method of how we can develop complex projects that can meet objectives in an efficient way.
