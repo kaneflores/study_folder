@@ -7,7 +7,6 @@ int main(){
 
 C++
 
-C++ (pronounced “see plus plus”) was developed by Bjarne Stroustrup at Bell Labs as an extension to C, starting in 1979. C++ adds many new features to the C language, and is perhaps best thought of as a superset of C, though this is not strictly true (as C99 introduced a few features that do not exist in C++). C++’s most notable innovation over C is that it supports object-oriented programming. As for what an “object” is and how it differs from traditional programming methods, well, we’ll cover that in later chapters.
 
 
 
